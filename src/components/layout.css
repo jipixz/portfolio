@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .titulo {
     font-family:'Courier New', Courier, monospace;
     font-size: 55px;
@@ -7,7 +11,7 @@
     color: white;
     margin: 0px auto;
     width: 50%;
-    bottom: 50%;
+    bottom: 45%;
     z-index: 1;
 }
 
@@ -43,6 +47,17 @@
     }
 }
 
+.container {
+    background: #101f59;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    z-index: -10;
+}
+
 @media (orientation: portrait){
     .titulo{
         width: 80%;
@@ -55,29 +70,21 @@
         padding-top: 40%;
     }
     .container{
-        height: 100%;
+        height: 600px;
         display: flexbox;
     }
 }
 
-@media (max-width:1080px){
+@media (max-width:1080px) and (orientation: landscape){
     .titulo{
         font-size: 35px;        
     }
     .arrowDown{
         font-size: 2em;
     }
-}
-
-.container {
-    background: #101f59;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -10;
+    .container{
+        height: 400px;
+    }
 }
 
 .cuadrados {
@@ -88,6 +95,7 @@
     height: 100%;
     z-index: -1;
 }
+
 
 li {
     position: absolute;

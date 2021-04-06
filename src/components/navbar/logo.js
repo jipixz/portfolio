@@ -5,10 +5,14 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const LogoWrap = styled.div`
     margin: auto 0;
-    flex: 0 1 36px;
+    flex: 0 1 60px;
 
-    @media (max-width: 768px) and (orientation: landscape) {
-        flex: 0 1 25px;
+    @media (max-width: 1280px) and (orientation: landscape) {
+        flex: 0 1 40px;
+    }
+
+    @media (max-width: 1280px) and (orientation: portrait) {
+        flex: 0 1 40px;
     }
 `
 
