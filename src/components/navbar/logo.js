@@ -6,6 +6,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 const LogoWrap = styled.div`
     margin: auto 0;
     flex: 0 1 60px;
+    filter: drop-shadow(0 0 10px #FEB8FF);
 
     @media (max-width: 1280px) and (orientation: landscape) {
         flex: 0 1 40px;
@@ -18,10 +19,13 @@ const LogoWrap = styled.div`
 
 export default function Logo () {
     const data = useStaticQuery(graphql`
-        query {
-            file(name: { eq: "logo" },extension: { eq: "png" }) {
+        query{
+            file(name: {eq: "logo"}, extension: {eq: "png"}) {
                 childImageSharp {
-                    gatsbyImageData(layout: CONSTRAINED, width:60)
+                    gatsbyImageData(layout: CONSTRAINED
+                                    width: 60
+                                    placeholder: BLURRED
+                    )
                 }
             }
         }

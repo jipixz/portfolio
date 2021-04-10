@@ -1,4 +1,17 @@
-.feature {
-    margin: 0rem auto;
-    max-width: 500px;
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000B38;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7DBCFA;
+    border-radius: 6px;
+    border: 2px solid #000B38;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FEB8FF;
 }

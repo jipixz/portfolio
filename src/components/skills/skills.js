@@ -1,10 +1,10 @@
 import React from "react"
 import { Container, Title, Text } from "../../styles/generalContainer.js"
 
-export default function MyProjects () {
+export default function Skills () {
     return(
         <Container>
-            <Title>Projects</Title>
+            <Title>Skills</Title>
         </Container>
     )
 }

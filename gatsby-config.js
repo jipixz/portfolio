@@ -33,6 +33,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sitemap",
     "gatsby-image",
+    "babel-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -46,7 +47,9 @@ module.exports = {
       options: {
         name: "images",
         path: "./src/images",
+        ignore: [/(.\.js)/],
       },
+      __key: "images",
     },
   ],
 };

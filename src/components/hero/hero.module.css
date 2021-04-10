@@ -7,7 +7,7 @@
     color: white;
     margin: 0px auto;
     width: 50%;
-    bottom: 45%;
+    bottom: 40%;
     z-index: 1;
 }
 
@@ -64,6 +64,7 @@
     .arrowDown{
         padding-left: 45%;
         padding-top: 40%;
+        font-size: 2em;
     }
     .container{
         height: 600px;
@@ -71,7 +72,7 @@
     }
 }
 
-@media (max-width:1080px) and (orientation: landscape){
+@media (max-width:899px) and (orientation: landscape){
     .titulo{
         font-size: 35px;        
     }
